@@ -43,7 +43,8 @@
 	<![endif]-->
 
 	</head>
-	<body class="boxed">
+	<!-- <body class="boxed"> -->
+	<body class="">
 
 	<!-- Loader -->
 	<div class="fh5co-loader"></div>
@@ -53,26 +54,28 @@
 	<div id="fh5co-page">
 		<header id="fh5co-header" role="banner">
 			<div class="container">
-				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+				<a href="/" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
 				<div id="fh5co-logo"><a href="index.html"><img src="http://7xku3c.com1.z0.glb.clouddn.com/2325256348.jpg?imageView2/2/h/80" alt="张颖"></a></div>
 				<nav id="fh5co-main-nav" role="navigation">
 					<ul>
-						<li><a href="/index.html">首页</a></li>
-						<li class="has-sub">
+						<li><a href="/">HOME</a></li>
+						<li><a href="/Qt">QT</a></li>
+						<li><a href="/Qml">QML</a></li>
+						<!-- <li class="has-sub">
 							<div class="drop-down-menu">
-								<a href="/Qt/index.html">Qt</a>
+								<a href="Qt/index.html">Qt</a>
 								<div class="dropdown-menu-wrap">
 									<ul>
-										<li><a href="/Qt/index.html">Qt</a></li>
-										<li><a href="/Qml/index.html">Qml</a></li>
+										<li><a href="Qt/index.html">Qt</a></li>
+										<li><a href="Qml/index.html">Qml</a></li>
 									</ul>
 								</div>
 							</div>
-						</li>
-						<li><a href="/Linux/index.html">Linux</a></li>
+						</li> -->
+						<li><a href="/Linux">Linux</a></li>
 						<li class="has-sub">
 							<div class="drop-down-menu">
-								<a href="/Item/index.html">Item</a>
+								<a href="/Item">Item</a>
 								<div class="dropdown-menu-wrap">
 									<ul>
 										<li><a href="#">#</a></li>
@@ -82,7 +85,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="cta"><a href="/Note/index.html">随手笔记</a></li>
+						<li class="cta"><a href="/Note">随手笔记</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -93,7 +96,7 @@
 		<div id="fh5co-intro" class="fh5co-section">
 			<div class="container">
 				<div class="row row-bottom-padded-sm">
-					<div class="col-md-12">
+					<div class="col-md-8 col-md-offset-2">
 						{{.MDContent}}
 					</div>
 				</div>
@@ -103,33 +106,6 @@
 
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="container">
-				<div class="row row-bottom-padded-sm">
-					<div class="col-md-4 col-sm-12">
-						<div class="fh5co-footer-widget">
-							<h3>关于我</h3>
-							<p>90后，喜爱猫咪；非典型科技从业人员，康复医疗器械创业。</p>
-						</div>
-					</div>
-					<div class="col-md-3 col-md-push-1 col-sm-12 col-sm-push-0">
-						<div class="fh5co-footer-widget">
-							<h3>友情连接</h3>
-							<ul class="fh5co-footer-link">
-								<li><a href="https://github.com/toukii">toukii</a></li>
-								
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-3 col-md-push-2 col-sm-12 col-sm-push-0">
-						
-						<div class="fh5co-footer-widget">
-							<h3>联系我们</h3>
-							<ul class="fh5co-social">
-								<li class="message"><a href="#"><i class="icon-mail"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
 				<div class="row">
 					<div class="col-md-12">
 						<div class="fh5co-copyright">
