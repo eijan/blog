@@ -16,41 +16,37 @@ InfluxDB操作记录
 
 使用帮助，不能直接使用**'?'**
 
-> ?
-ERR: error parsing query: found ?, expected SELECT, DELETE, SHOW, CREATE, DROP, GRANT, REVOKE, ALTER, SET, KILL at line 1, char 1
-Warning: It is possible this error is due to not setting a database.
-Please set a database with the command "use <database>".
 > help
-Usage:
-        connect <host:port>   connects to another node specified by host:port
-        auth                  prompts for username and password
-        pretty                toggles pretty print for the json format
-        use <db_name>         sets current database
-        format <format>       specifies the format of the server responses: json, csv, or column
-        precision <format>    specifies the format of the timestamp: rfc3339, h, m, s, ms, u or ns
-        consistency <level>   sets write consistency level: any, one, quorum, or all
-        history               displays command history
-        settings              outputs the current settings for the shell
-        exit/quit/ctrl+d      quits the influx shell
-
-        show databases        show database names
-        show series           show series information
-        show measurements     show measurement information
-        show tag keys         show tag key information
-        show field keys       show field key information
-
-        A full list of influxql commands can be found at:
-        https://docs.influxdata.com/influxdb/latest/query_language/spec/
-
+> Usage:
+>        connect <host:port>   connects to another node specified by host:port
+>        auth                  prompts for username and password
+>        pretty                toggles pretty print for the json format
+>        use <db_name>         sets current database
+>        format <format>       specifies the format of the server responses: json, csv, or column
+>        precision <format>    specifies the format of the timestamp: rfc3339, h, m, s, ms, u or ns
+>        consistency <level>   sets write consistency level: any, one, quorum, or all
+>        history               displays command history
+>        settings              outputs the current settings for the shell
+>        exit/quit/ctrl+d      quits the influx shell
+>
+>        show databases        show database names
+>        show series           show series information
+>        show measurements     show measurement information
+>        show tag keys         show tag key information
+>        show field keys       show field key information
+>
+>        A full list of influxql commands can be found at:
+>        https://docs.influxdata.com/influxdb/latest/query_language/spec/
+>
 > 
 ----------
 
 创建数据库
 > CREATE DATABASE nimbot
 > use nimbot
-Using database nimbot
+> Using database nimbot
 ----------
 
 删除数据库
-DROP DATABASE "database name"
+> DROP DATABASE "database name"
 
