@@ -26,7 +26,7 @@ InfluxDB操作记录
 >        precision <format>    specifies the format of the timestamp: rfc3339, h, m, s, ms, u or ns
 >        consistency <level>   sets write consistency level: any, one, quorum, or all
 >        history               displays command history
->        settings              outputs the current settings for the shell
+>        settings              outputs the current settings for thegit  shell
 >        exit/quit/ctrl+d      quits the influx shell
 >
 >        show databases        show database names
