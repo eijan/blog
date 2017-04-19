@@ -104,10 +104,10 @@ $(function(){
 	}
 	$('#fh5co-header-section').addClass('fh5co-scrolled');
 	
-	// Parallax
-	$('.fh5co-hero-intro').css({
-	      'opacity' : 1-(scrollPos/300)
-	});
+	// // Parallax
+	// $('.fh5co-hero-intro').css({
+	//       'opacity' : 1-(scrollPos/300)
+	// });
 });
 </script>
 
