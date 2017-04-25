@@ -60,6 +60,24 @@ pre{
 	background-color: #DAF9CA;
 	color: #376956;
 }
+.lineB{
+	background-color: #dbffdb;
+}
+.line{
+	float:left;
+	width:25px;
+}
+.linenum{
+	color: rgba(27,31,35,0.3);
+	float: left;
+	padding-left: 3px;
+	width: 25px;
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
 #fh5co-header-section.fh5co-scrolled{
 	background: #C3C3F3;
 }
@@ -71,6 +89,31 @@ pre{
 	<body>
 <script src="http://7xku3c.com1.z0.glb.clouddn.com/static/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript">
+$(function() {
+	$("pre").each(function(index, elem) {
+		var content = $(this).text();
+		var numctx = "<div class='line'>";
+		var lines = content.split("\n");
+		var result = '';
+		var ctx = '<code>';
+		if (lines.length<4) {return}
+		for (var i = 0; i < lines.length-1; i++) {
+			numctx += "<div class='linenum'>" + (i+1) + "</div>";
+			var c = lines[i];
+			if (c=="") {c="<br>";}
+			if (i%2==0) {
+				ctx+= "<div class='lineA'>" + c+"</div>";
+			}else{
+				ctx+= "<div class='lineB'>" + c+"</div>";
+			}
+		}
+		numctx += "</div>";
+		ctx += "</code>"
+		result += numctx + ctx;
+		$(this).html(result);
+	});
+	
+})
 $(document).ready(function(){  
     var p=0,t=0;  
   

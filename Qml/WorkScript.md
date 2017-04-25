@@ -75,7 +75,5 @@ function getText( url ){
     request.send( url );
 
     return request.responseText;
-} 
+}
 ```
-
-
