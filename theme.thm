@@ -178,13 +178,13 @@ $(function(){
 						<li><a href="/Qml">QML</a></li>
 						
 						<li><a href="/Linux">Linux</a></li>
-						<li>
+						<!-- <li>
 							<a href="#" class="fh5co-sub-ddown">ITEM</a>
 							<ul class="fh5co-sub-menu">
 							 	<li><a href="#">robot</a></li>
 								<li><a href="http://eijan.daoapp.io">zd</a></li>
 							</ul>	
-						</li>
+						</li> -->
 						<li class="cta"><a href="/Note">随手笔记</a></li>
 					</ul>
 
