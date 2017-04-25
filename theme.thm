@@ -75,7 +75,10 @@ $(document).ready(function(){
     var p=0,t=0;  
   
     $(window).scroll(function(e){  
-            p = $(this).scrollTop();  
+            p = $(this).scrollTop();
+            if(p<200){
+                $('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60");
+            }
             if (p<=50) {
             	$('body').addClass('fh5co-mobile-menu-visible');
                 $('#fh5co-header-section').addClass('fh5co-scrolled');
@@ -83,12 +86,14 @@ $(document).ready(function(){
             }else{
             
 	            if(t<=p){//下滚  
+                	$('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/260");
 	                $('body').removeClass('fh5co-mobile-menu-visible');
 	                $('#fh5co-header-section').removeClass('fh5co-scrolled');
 	                $('#fh5co-header-section').css("z-index",-1);
 	            }  
 	              
 	            if(t>p+50){//上滚  
+	            	$('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60");
 	                $('body').addClass('fh5co-mobile-menu-visible');
 	                $('#fh5co-header-section').addClass('fh5co-scrolled');
 	                $('#fh5co-header-section').css("z-index",10);
@@ -117,7 +122,7 @@ $(function(){
 					
 					<!-- START #fh5co-logo -->
 					<!-- <h1 id="fh5co-logo" class="pull-left"><a href="index.html">Display</a></h1> -->
-					<div id="fh5co-logo" class="pull-left"><a href="/"><img src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60" alt="张颖"></a></div>
+					<div id="fh5co-logo" class="pull-left"><a href="/"><img id="logo" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60" alt="张颖"></a></div>
 					
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
