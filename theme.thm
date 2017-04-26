@@ -56,19 +56,26 @@
 
 
 <style type="text/css">
+.bg{
+	background-image: url('http://7xku3c.com1.z0.glb.clouddn.com/static/img/ctxbg.jpg');
+	/*background-size: contain;*/
+}
 .col-md-8{
 	min-height: 482px;
+	background-color:rgba(253,255,223,0.8);
+	/*opacity:0.8;*/
 }
 pre{
-	background-color: #DAF9CA;
+	background-color: #C9CABB;
 	color: #376956;
 }
 .lineB{
-	background-color: #dbffdb;
+	background-color: #EFF0DC;
 }
 .line{
 	float:left;
 	width:25px;
+	background-color: #C9CABB;
 }
 .linenum{
 	color: rgba(27,31,35,0.3);
@@ -85,7 +92,11 @@ pre{
 	background: #C3C3F3;
 }
 .hiddened{top: -90px;}
-.showed{top:0;z-index: 9999;}
+/*.showed{top:0;z-index: 9999;}*/
+#logoOuter{
+	z-index: 1000;
+	position: fixed;
+}
 </style>
 
 	</head>
@@ -123,23 +134,23 @@ $(document).ready(function(){
     $(window).scroll(function(e){  
             p = $(this).scrollTop();
             if(p<200){
-                $('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60");
+                $('#logoOuter').attr("hidden","hidden");
             }
             if (p<=50) {
             	$('body').addClass('fh5co-mobile-menu-visible');
                 $('#fh5co-header-section').addClass('fh5co-scrolled');
-                $('#fh5co-header-section').css("z-index",10);
+                // $('#fh5co-header-section').css("z-index",10);
             }else{
             
 	            if(t<=p){//下滚  
-                	$('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/260");
+                	$('#logoOuter').attr("hidden",null);
 	                $('body').removeClass('fh5co-mobile-menu-visible');
 	                $('#fh5co-header-section').removeClass('fh5co-scrolled');
 	                $('#fh5co-header-section').css("z-index",-1);
 	            }  
 	              
 	            if(t>p+50){//上滚  
-	            	$('#logo').attr("src","http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60");
+	            	$('#logoOuter').attr("hidden","hidden");
 	                $('body').addClass('fh5co-mobile-menu-visible');
 	                $('#fh5co-header-section').addClass('fh5co-scrolled');
 	                $('#fh5co-header-section').css("z-index",10);
@@ -149,26 +160,21 @@ $(document).ready(function(){
     });  
 });
 $(function(){  
- //  	var scrollPos = $(this).scrollTop();
 	if ( $('body').hasClass('fh5co-mobile-menu-visible')==false ) {
 		$('body').addClass('fh5co-mobile-menu-visible');
 	}
 	$('#fh5co-header-section').addClass('fh5co-scrolled');
-	
-	// // Parallax
-	// $('.fh5co-hero-intro').css({
-	//       'opacity' : 1-(scrollPos/300)
-	// });
 });
 </script>
-
+			
+			<div class="bg">
 			<!-- START #fh5co-header -->
 			<header id="fh5co-header-section" role="header">
 				<div class="container">
 					
 					<!-- START #fh5co-logo -->
 					<!-- <h1 id="fh5co-logo" class="pull-left"><a href="index.html">Display</a></h1> -->
-					<div id="fh5co-logo" class="pull-left"><a href="/"><img id="logo" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60" alt="张颖"></a></div>
+					<div id="logoHeader" class="pull-left"><a href="/"><img id="logo-header" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/60" alt="张颖"></a></div>
 					
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
@@ -194,12 +200,10 @@ $(function(){
 			</header>
 			
 
-			<div style="margin-top: 100px;">
-
-
-
+				<div style="margin-top: 78px;">
 				<div id="fh5co-intro" class="fh5co-section">
 					<div class="container">
+						<div id="logoOuter" hidden="hidden" class="pull-left"><a href="/"><img id="logo" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/260" alt="张颖"></a></div>
 						<div class="row row-bottom-padded-sm">
 							<div class="col-md-8 col-md-offset-2">
 								{{.MDContent}}
@@ -208,8 +212,10 @@ $(function(){
 
 					</div>
 				</div>
-				
-				
+				</div>
+		
+		</div>
+			
 				<footer id="fh5co-footer" style="height: 30px">
 					<div class="container" >
 						
@@ -217,10 +223,6 @@ $(function(){
 
 					</div>
 				</footer>
-			
-		
-			</div>
-			
 			
 		<!-- jQuery -->
 		
