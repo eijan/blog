@@ -181,6 +181,7 @@ $(function(){
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
 						<li><a href="/">HOME</a></li>
+						<li><a href="/Item/fanqie.html">番茄</a></li>
 						<li><a href="/Qt">QT</a></li>
 						<li><a href="/Qml">QML</a></li>
 						
