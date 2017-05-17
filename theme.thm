@@ -57,12 +57,12 @@
 
 <style type="text/css">
 .bg{
-	background-image: url('http://7xku3c.com1.z0.glb.clouddn.com/static/img/ctxbg.jpg');
+	/*background-image: url('http://7xku3c.com1.z0.glb.clouddn.com/static/img/ctxbg.jpg');*/
 	/*background-size: contain;*/
 }
 .col-md-8{
 	min-height: 482px;
-	background-color:rgba(253,255,223,0.8);
+	background-color:rgba(253,255,243,0.8);
 	/*opacity:0.8;*/
 }
 pre{
