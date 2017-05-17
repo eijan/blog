@@ -57,13 +57,13 @@
 
 <style type="text/css">
 .bg{
-	/*background-image: url('http://7xku3c.com1.z0.glb.clouddn.com/static/img/ctxbg.jpg');*/
+	background-image: url('/bg.gif');
 	/*background-size: contain;*/
 	/*min-height: 510px;*/
 }
 .col-md-8{
-	min-height: 510px;
-	background-color:rgba(253,255,243,0.8);
+	min-height: 500px;
+	background-color:rgba(253,255,243,0.9);
 	/*opacity:0.8;*/
 }
 pre{
@@ -201,7 +201,7 @@ $(function(){
 			</header>
 			
 
-				<div style="margin-top: 90px;">
+				<div style="margin-top: 80px;">
 				<div id="fh5co-intro" class="fh5co-section">
 					<div class="container">
 						<div id="logoOuter" hidden="hidden" class="pull-left"><a href="/"><img id="logo" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/260" alt="张颖"></a></div>
