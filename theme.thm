@@ -45,7 +45,7 @@
 	
 
 	<!-- Theme Style -->
-	<link rel="stylesheet" href="http://7xku3c.com1.z0.glb.clouddn.com/static/css/style2.css">
+	<link rel="stylesheet" href="http://7xku3c.com1.z0.glb.clouddn.com/static/css/style2.css?v=1">
 
 	
 	<!-- FOR IE9 below -->
@@ -59,9 +59,10 @@
 .bg{
 	/*background-image: url('http://7xku3c.com1.z0.glb.clouddn.com/static/img/ctxbg.jpg');*/
 	/*background-size: contain;*/
+	/*min-height: 510px;*/
 }
 .col-md-8{
-	min-height: 482px;
+	min-height: 510px;
 	background-color:rgba(253,255,243,0.8);
 	/*opacity:0.8;*/
 }
