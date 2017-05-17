@@ -170,7 +170,7 @@ $(function(){
 			
 			<div class="bg">
 			<!-- START #fh5co-header -->
-			<header id="fh5co-header-section" role="header">
+			<header id="fh5co-header-section" role="header" style="background-color: white;">
 				<div class="container">
 					
 					<!-- START #fh5co-logo -->
@@ -201,7 +201,7 @@ $(function(){
 			</header>
 			
 
-				<div style="margin-top: 78px;">
+				<div style="margin-top: 90px;">
 				<div id="fh5co-intro" class="fh5co-section">
 					<div class="container">
 						<div id="logoOuter" hidden="hidden" class="pull-left"><a href="/"><img id="logo" src="http://7xku3c.com1.z0.glb.clouddn.com//img/cat.png?imageView2/2/h/260" alt="张颖"></a></div>
